@@ -6,9 +6,18 @@
 #include <string>
 
 class itemType {
-	int num;
 public:
-	itemType(int number) : num(number) {}
+	enum Position { START, AFTER_FIRST, AFTER_SECOND, AFTER_THIRD };
+	itemType(int n, int y, Position pos) : n(n), y(y), pos(pos) {}
+	int getn() { return n; }
+	int gety() { return y; }
+	void setPos(Position pos) { this->pos = pos; }
+	void setn(int n) { this->n = n; }
+	void sety(int y) { this->y = y; }
+	Position getPos() { return pos; }
+private:
+	int n, y;
+	Position pos;
 };
 
 
