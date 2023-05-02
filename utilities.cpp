@@ -38,6 +38,3 @@ void printNumIfSum2Rec(int* arr, int n, int x, int y)
 		}
 	}
 }
-// [1,2,3,4,5,6]
-//printNumIfSum2Rec(arr, 6, 6, y=);
-// 
