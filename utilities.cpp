@@ -2,23 +2,47 @@
 using namespace std;
 
 //create an int arr from user inputh
-vector<int> getArr(int arrLen)
+bool getArr(int arrLen, std::vector<int>& arr)
 {
-	vector<int> arr;
-	int input;
+	string input;
+	int numInputh;
 	for (int i = 0; i < arrLen; i++)
 	{
 		cin >> input;
-		arr.push_back(input);
+		if (!is_number(input))
+			return false;
+		numInputh = stoi(input);
+		if (numInputh <= 0)
+			return false;
+		arr.push_back(numInputh);
 	}
 
-	return arr;
+	return true;
+}
+
+bool getNumber(int& num)
+{
+	string str;
+	cin >> str;
+	if (is_number(str))
+	{
+		num = stoi(str);
+		return true;
+	}
+
+	return false;
+}
+
+bool is_number(const std::string& s)
+{
+	std::string::const_iterator it = s.begin();
+	while (it != s.end() && std::isdigit(*it)) ++it;
+	return !s.empty() && it == s.end();
 }
 
 void printFuncRunTime(double time_taken, string funcName)
 {
-	cout << "Time taken by function "<< funcName << " is : " << fixed << time_taken << setprecision(9);
-	cout << " seconds" << endl;
+	cout << time_taken << setprecision(9) <<" seconds" << endl;
 }
 
 void printNumIfSum1(std::vector<int> arr, int n, int x)
