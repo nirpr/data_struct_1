@@ -1,6 +1,19 @@
 #include "utilities.h"
 using namespace std;
 
+//create an int arr from user inputh
+vector<int> getArr(int arrLen)
+{
+	vector<int> arr;
+	int input;
+	for (int i = 0; i < arrLen; i++)
+	{
+		cin >> input;
+		arr.push_back(input);
+	}
+
+	return arr;
+}
 
 void printFuncRunTime(double time_taken, string funcName)
 {
@@ -8,7 +21,7 @@ void printFuncRunTime(double time_taken, string funcName)
 	cout << " seconds" << endl;
 }
 
-void printNumIfSum1(int* arr, int n, int x)
+void printNumIfSum1(std::vector<int> arr, int n, int x)
 {
 	for (int i = 0; i < n; i++)
 	{
@@ -20,7 +33,7 @@ void printNumIfSum1(int* arr, int n, int x)
 	}
 }
 
-void printNumIfSum2Rec(int* arr, int n, int x, int y)
+void printNumIfSum2Rec(std::vector<int> arr, int n, int x, int y)
 {
 	if (n == 1 && y != 0)
 	{
