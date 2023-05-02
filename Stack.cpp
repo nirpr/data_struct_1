@@ -28,7 +28,7 @@ bool stack::isEmpty()
 
 void stack::push(itemType item)
 {
-	top = new node(item);
+	top = new node(item, top);
 }
 
 itemType stack::pop()
