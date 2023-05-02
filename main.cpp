@@ -3,8 +3,9 @@
 
 int main()
 {
-	int arr[6] = { 1,2,3,4,5,6 };
-	printNumIfSum(arr, 6, 6);
+	int arr[6] = { 1,9,7,8,9,15 };
+	printNumIfSum1(arr, 6, 16);
 
+	printNumIfSum2Rec(arr, 6, 16, 0);
 	return 0;
 }
