@@ -3,7 +3,8 @@
 
 #include <iostream>
 
-void printNumIfSum(int* arr, int n, int x);
+void printNumIfSum1(int* arr, int n, int x);
+void printNumIfSum2Rec(int* arr, int n, int x, int y);
 
 
 
