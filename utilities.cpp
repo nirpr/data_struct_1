@@ -2,6 +2,12 @@
 using namespace std;
 
 
+void printFuncRunTime(double time_taken, string funcName)
+{
+	cout << "Time taken by function "<< funcName << " is : " << fixed << time_taken << setprecision(9);
+	cout << " seconds" << endl;
+}
+
 void printNumIfSum1(int* arr, int n, int x)
 {
 	for (int i = 0; i < n; i++)
