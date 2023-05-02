@@ -13,6 +13,8 @@ void printNumIfSum2Rec(std::vector<int> arr, int n, int x, int y);
 void printNumIfSum3Stack(std::vector<int> arr, int n, int x, int y);
 
 void printFuncRunTime(double time_taken, std::string funcName);
-std::vector<int> getArr(int arrLen);
+bool getArr(int arrLen, std::vector<int>& arr);
+bool getNumber(int& num);
+bool is_number(const std::string& s);
 
 #endif !__UTILITIES_H
