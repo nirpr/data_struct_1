@@ -20,4 +20,4 @@ private:
 };
 
 
-#endif !__ITEMTYPE_H
+#endif
