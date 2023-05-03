@@ -30,7 +30,7 @@ int main()
 
 	//second function - recursion
 	//the y parameter set to 0
-	//printNumIfSum2Rec(arr, arrLenght, x, y);
+	printNumIfSum2Rec(arr, arrLenght, x, y);
 
 	// unsync the I/O of C and C++ - for potentially faster execution.
 	end = chrono::high_resolution_clock::now();
