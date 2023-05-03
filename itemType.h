@@ -3,11 +3,10 @@
 
 #include <iostream>
 #include <vector>
-#include <string>
 
 class itemType {
 public:
-	enum Position { START, AFTER_FIRST, AFTER_SECOND, AFTER_THIRD };
+	enum Position { START, AFTER_SECOND, DONE }; // only after the second rec call we continue any other rec call considered DONE.
 	itemType(int n, int y, Position pos) : n(n), y(y), pos(pos) {}
 	int getn() { return n; }
 	int gety() { return y; }
@@ -19,7 +18,6 @@ private:
 	int n, y;
 	Position pos;
 };
-
 
 
 #endif !__ITEMTYPE_H

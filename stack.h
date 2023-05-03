@@ -1,8 +1,7 @@
 #ifndef __STACK_H
 #define __STACK_H
 #include "itemType.h"
-#include "List.h"
-
+#include "node.h"
 
 class stack
 {
