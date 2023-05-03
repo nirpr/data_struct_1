@@ -43,8 +43,9 @@ bool is_number(const std::string& s)
 
 void printFuncRunTime(double time_taken, string funcName)
 {
-	cout << time_taken << setprecision(9) <<" seconds" << endl;
+	cout << fixed << time_taken << setprecision(9) << " seconds" << endl;
 }
+
 
 void printNumIfSum1(vector<int> arr, int n, int x)
 {
