@@ -46,7 +46,7 @@ int main()
 		start = chrono::high_resolution_clock::now();
 
 		//third function - recursion by stack
-		//printNumIfSum3Stack(arr, arrLenght, x, y);
+		printNumIfSum3Stack(arr, arrLenght, x, y);
 
 		// unsync the I/O of C and C++ - for potentially faster execution.
 		end = chrono::high_resolution_clock::now();
