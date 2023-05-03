@@ -17,4 +17,4 @@ bool getArr(int arrLen, std::vector<int>& arr);
 bool getNumber(int& num);
 bool is_number(const std::string& s);
 
-#endif !__UTILITIES_H
+#endif

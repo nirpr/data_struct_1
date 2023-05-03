@@ -16,4 +16,4 @@ public:
 	void insertAfter(node* newNode);
 	node* deleteAfter();
 };
-#endif ! __NODE_H
+#endif

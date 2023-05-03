@@ -27,7 +27,8 @@ bool getNumber(int& num)
 	if (is_number(str))
 	{
 		num = stoi(str);
-		return true;
+		if (num > 0)
+			return true;
 	}
 
 	return false;

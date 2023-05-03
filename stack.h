@@ -15,6 +15,6 @@ public:
 	itemType pop();
 };
 
-#endif !__STACK_H
+#endif
 
 
