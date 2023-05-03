@@ -101,15 +101,15 @@ void printNumIfSum3Stack(vector<int> arr, int n, int x, int y)
 				}
 			}
 		}
-		else if (curr.getPos() == itemType::AFTER_FIRST)
-		{
-			curr.setPos(itemType::AFTER_THIRD);
-			S.push(curr);
-			curr.sety(arr[curr.getn() - 1]);
-			curr.setn(curr.getn() - 1);
-			curr.setPos(itemType::START);
-			returnFromRec = true;
-		}
+		//else if (curr.getPos() == itemType::AFTER_FIRST)
+		//{
+			//curr.setPos(itemType::AFTER_THIRD);
+			//S.push(curr);
+			//curr.sety(arr[curr.getn() - 1]);
+			//curr.setn(curr.getn() - 1);
+			//curr.setPos(itemType::START);
+		//	returnFromRec = true;
+		//}
 		else if (curr.getPos() == itemType::AFTER_SECOND) {
 			curr.setPos(itemType::AFTER_THIRD);
 			S.push(curr);
@@ -118,8 +118,8 @@ void printNumIfSum3Stack(vector<int> arr, int n, int x, int y)
 			curr.setPos(itemType::START);
 			returnFromRec = false;
 		}
-		else if (curr.getPos() == itemType::AFTER_THIRD) {
-			returnFromRec = true;
-		}
+		//else if (curr.getPos() == itemType::AFTER_THIRD) {
+			//returnFromRec = true;
+		//}
 	} while (!S.isEmpty());
 }
